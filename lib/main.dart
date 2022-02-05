@@ -250,7 +250,9 @@ class _HomePageState extends State<HomePage> {
         }else {
           //print('$num');
           setState(() {
-            input = '$input$num';
+            if(input.length < 3) {
+              input = '$input$num';
+            }
           });
         }
       },
