@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                                   input ='';
                                 });
                             },
-                              child: Icon(Icons.clear_outlined,color: Colors.black),
+                              child: Icon(Icons.clear_outlined,color:Colors.amber.shade900),
                             ),
                           ),
                           _buildButton(0),
@@ -256,7 +256,7 @@ class _HomePageState extends State<HomePage> {
           });
         }
       },
-        child: (num == -1 )?Icon(Icons.backspace_outlined,color: Colors.black,):Text('$num',style: TextStyle(fontSize: 10,color: Colors.black),),
+        child: (num == -1 )?Icon(Icons.backspace_outlined,color: Colors.amber.shade900,):Text('$num',style: TextStyle(fontSize: 20,color: Colors.amber.shade900),),
       ),
     );
   }
